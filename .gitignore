@@ -1,0 +1,8 @@
+__pycache__/
+*.sqlite3
+**/admin.py
+**/asgi.py
+**/wsgi.py
+**/apps.py
+**/models.py
+**/migrations/

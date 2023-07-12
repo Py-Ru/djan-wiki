@@ -1,0 +1,16 @@
+{% extends 'fetcher/fetch.html' %}
+
+{% block content %}
+  <div class="p-3">
+    {% if country_name %}
+      <h2 class="font-bold pb-4">You searched for: {{ country_name }}</h2>
+      {% if not_found %}
+        <p>No information found for {{ country_name }}.</p>
+      {% else %}
+        {% if extract %}
+          <p class="leading-7">{{ extract }}</p>
+        {% endif %}
+      {% endif %}
+    {% endif %}
+  </div>
+{% endblock %}
